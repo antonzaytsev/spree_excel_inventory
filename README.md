@@ -19,7 +19,8 @@ Installation
 
 Add the following line to your Gemfile and execute bundle install
 
-    gem "spree_excel_inventory", git: "git://github.com/entropillc/spree_excel_inventory.git", branch: "master"
-
+```Ruby
+  gem "spree_excel_inventory", git: "git://github.com/entropillc/spree_excel_inventory.git", branch: "master"
+```
 
 Copyright (c) 2013 Nicholas W. Watson, released under the New BSD License
