@@ -1,3 +1,5 @@
 Spree::Core::Engine.routes.draw do
-  # Add your extension routes here
+  
+  get "admin/reports/products/excel" => 'admin/products#excel'
+  
 end
