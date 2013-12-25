@@ -22,10 +22,10 @@ module Spree
             product.id,
             product.name,
             product.sku,
-            number_with_precision(product.price, :precision => 2).to_f,
-            number_with_precision(product.cost_price, :precision => 2).to_f,
-            product.count_on_hand,
-            number_with_precision(product.price * product.count_on_hand, :precision => 2).to_f,
+            number_with_precision(product.price, :precision => 2),
+            number_with_precision(product.cost_price, :precision => 2),
+            product.stock_count,
+            number_with_precision(product.price * product.stock_count, :precision => 2),
           ]
         next_row
       end
